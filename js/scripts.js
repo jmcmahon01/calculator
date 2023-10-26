@@ -1,12 +1,10 @@
-function saySomething(whatToSay) {
-  window.alert(whatToSay);
-}
+//Business Logic
 function add(number1, number2) {
   return number1 + number2;
 }
-saySomething("Hi!");
+//User Interface Logic
+const number1 = parseInt(prompt("Enter a number:"));
+const number2 = parseInt(prompt("Enter another number:"));
+window.alert(add(number1, number2));
 
-const result = add(3, 5);
-const outPutText = "The sum is " + result + ".";
-saySomething(outPutText);
 
